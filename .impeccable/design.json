@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-30T00:14:50Z",
+  "title": "Design System: Wayfinding Board",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink Blue",
+        "canonical": "#10233f",
+        "tonalRamp": ["oklch(15% 0.035 252)", "oklch(26% 0.05 252)", "oklch(38% 0.055 252)", "oklch(50% 0.05 252)", "oklch(62% 0.04 252)", "oklch(74% 0.03 252)", "oklch(86% 0.018 252)", "oklch(95% 0.008 252)"]
+      },
+      "ink-deep": {
+        "role": "primary",
+        "displayName": "Deep Ink",
+        "canonical": "#09172b",
+        "tonalRamp": ["oklch(15% 0.03 252)", "oklch(26% 0.045 252)", "oklch(38% 0.05 252)", "oklch(50% 0.045 252)", "oklch(62% 0.035 252)", "oklch(74% 0.025 252)", "oklch(86% 0.015 252)", "oklch(95% 0.006 252)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f4f5ef",
+        "tonalRamp": ["oklch(15% 0.008 105)", "oklch(26% 0.01 105)", "oklch(38% 0.012 105)", "oklch(50% 0.013 105)", "oklch(62% 0.012 105)", "oklch(74% 0.01 105)", "oklch(86% 0.008 105)", "oklch(95% 0.006 105)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Warm White",
+        "canonical": "#fffef8",
+        "tonalRamp": ["oklch(15% 0.006 95)", "oklch(26% 0.008 95)", "oklch(38% 0.009 95)", "oklch(50% 0.01 95)", "oklch(62% 0.009 95)", "oklch(74% 0.008 95)", "oklch(86% 0.006 95)", "oklch(95% 0.004 95)"]
+      },
+      "signal": {
+        "role": "secondary",
+        "displayName": "Signal Yellow",
+        "canonical": "#ffd43b",
+        "tonalRamp": ["oklch(15% 0.05 95)", "oklch(26% 0.09 95)", "oklch(38% 0.13 95)", "oklch(50% 0.17 95)", "oklch(62% 0.19 95)", "oklch(74% 0.18 95)", "oklch(86% 0.13 95)", "oklch(95% 0.055 95)"]
+      },
+      "signal-deep": {
+        "role": "secondary",
+        "displayName": "Deep Signal",
+        "canonical": "#8a6500",
+        "tonalRamp": ["oklch(15% 0.04 85)", "oklch(26% 0.08 85)", "oklch(38% 0.12 85)", "oklch(50% 0.14 85)", "oklch(62% 0.13 85)", "oklch(74% 0.1 85)", "oklch(86% 0.06 85)", "oklch(95% 0.025 85)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Route Line",
+        "canonical": "#a9b2ac",
+        "tonalRamp": ["oklch(15% 0.008 165)", "oklch(26% 0.012 165)", "oklch(38% 0.016 165)", "oklch(50% 0.018 165)", "oklch(62% 0.016 165)", "oklch(74% 0.013 165)", "oklch(86% 0.009 165)", "oklch(95% 0.004 165)"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Slate",
+        "canonical": "#526173",
+        "tonalRamp": ["oklch(15% 0.018 250)", "oklch(26% 0.028 250)", "oklch(38% 0.036 250)", "oklch(50% 0.038 250)", "oklch(62% 0.032 250)", "oklch(74% 0.024 250)", "oklch(86% 0.014 250)", "oklch(95% 0.006 250)"]
+      },
+      "ink-hover": {
+        "role": "primary",
+        "displayName": "Board Hover Ink",
+        "canonical": "#1d385d",
+        "tonalRamp": ["oklch(15% 0.035 252)", "oklch(26% 0.055 252)", "oklch(38% 0.065 252)", "oklch(50% 0.06 252)", "oklch(62% 0.05 252)", "oklch(74% 0.035 252)", "oklch(86% 0.02 252)", "oklch(95% 0.008 252)"]
+      },
+      "board-line": {
+        "role": "neutral",
+        "displayName": "Board Rule Blue",
+        "canonical": "#49607f",
+        "tonalRamp": ["oklch(15% 0.025 250)", "oklch(26% 0.04 250)", "oklch(38% 0.05 250)", "oklch(50% 0.052 250)", "oklch(62% 0.043 250)", "oklch(74% 0.032 250)", "oklch(86% 0.018 250)", "oklch(95% 0.007 250)"]
+      },
+      "board-muted": {
+        "role": "neutral",
+        "displayName": "Board Muted White",
+        "canonical": "#d8e2ef",
+        "tonalRamp": ["oklch(15% 0.012 250)", "oklch(26% 0.02 250)", "oklch(38% 0.028 250)", "oklch(50% 0.03 250)", "oklch(62% 0.026 250)", "oklch(74% 0.02 250)", "oklch(86% 0.012 250)", "oklch(95% 0.005 250)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Uppercase home and page headings." },
+      "headline": { "displayName": "Headline", "purpose": "Uppercase section headings." },
+      "title": { "displayName": "Route Title", "purpose": "Destination titles inside route rows." },
+      "body": { "displayName": "Body", "purpose": "General reading and descriptive copy." },
+      "label": { "displayName": "Route Label", "purpose": "Codes, statuses, and destination labels." },
+      "action": { "displayName": "Action", "purpose": "Primary and text-action labels." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state-standard", "value": "180ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Background and color state transitions when reduced motion is not requested." },
+      { "name": "movement-standard", "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Route-row translation when reduced motion is not requested." }
+    ],
+    "breakpoints": [
+      { "name": "stack", "value": "760px" },
+      { "name": "single-column-route", "value": "420px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "primary-action",
+      "description": "The compact, high-contrast action that sends visitors to a destination.",
+      "html": "<a class=\"ds-primary-action\" href=\"#\">Explore the work <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-primary-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 3.25rem; padding: 0.7rem 1rem; background: var(--ink, #10233f); color: var(--white, #fffef8); font-family: var(--body, Aptos, 'Segoe UI', sans-serif); font-weight: 800; text-decoration: none; transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), color 180ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-primary-action:hover { background: var(--signal, #ffd43b); color: var(--ink-deep, #09172b); } .ds-primary-action:focus-visible { outline: 3px solid var(--signal-deep, #8a6500); outline-offset: 4px; }"
+    },
+    {
+      "name": "Site Mark",
+      "kind": "nav",
+      "description": "The condensed uppercase identity lockup with its circular signal marker.",
+      "html": "<a class=\"ds-site-mark\" href=\"#\"><span class=\"ds-site-mark__signal\" aria-hidden=\"true\"></span><span>Mutnianski</span></a>",
+      "css": ".ds-site-mark { display: inline-flex; align-items: center; gap: 0.7rem; color: var(--ink-deep, #09172b); font-family: var(--display, 'Route Sans', 'Arial Narrow', sans-serif); font-size: 1.2rem; font-weight: 800; letter-spacing: 0.02em; text-decoration: none; text-transform: uppercase; } .ds-site-mark__signal { width: 0.8rem; height: 0.8rem; background: var(--signal, #ffd43b); border: 2px solid var(--ink-deep, #09172b); border-radius: 50%; } .ds-site-mark:focus-visible { outline: 3px solid var(--signal-deep, #8a6500); outline-offset: 4px; }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "description": "A compact unboxed navigation whose active state is a yellow route marker.",
+      "html": "<nav class=\"ds-site-nav\" aria-label=\"Primary navigation\"><a href=\"#\" aria-current=\"page\">Writing</a><a href=\"#\">Work</a><a href=\"#\">About</a></nav>",
+      "css": ".ds-site-nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); color: var(--ink-deep, #09172b); font-family: var(--body, Aptos, 'Segoe UI', sans-serif); font-size: 0.9rem; font-weight: 700; } .ds-site-nav a { padding-block: 0.4rem; color: inherit; text-decoration: none; } .ds-site-nav a:hover, .ds-site-nav a[aria-current='page'] { box-shadow: inset 0 -0.22rem var(--signal, #ffd43b); } .ds-site-nav a:focus-visible { outline: 3px solid var(--signal-deep, #8a6500); outline-offset: 4px; }"
+    },
+    {
+      "name": "Status Board",
+      "kind": "custom",
+      "refersTo": "status-board-header",
+      "description": "A dark two-column directory with a signal-yellow heading and open-status labels.",
+      "html": "<div class=\"ds-status-board\"><div class=\"ds-status-board__header\"><span>Destination</span><span>Status</span></div><a href=\"#\"><strong>Selected work</strong><span>Open</span></a><a href=\"#\"><strong>Writing archive</strong><span>Open</span></a></div>",
+      "css": ".ds-status-board { background: var(--ink, #10233f); color: var(--white, #fffef8); font-family: var(--body, Aptos, 'Segoe UI', sans-serif); } .ds-status-board__header, .ds-status-board a { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; min-height: 3.75rem; padding: 0.8rem 1rem; border-bottom: 1px solid var(--board-line, #49607f); } .ds-status-board__header { min-height: auto; background: var(--signal, #ffd43b); color: var(--ink-deep, #09172b); font-size: 0.72rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; } .ds-status-board a { color: inherit; text-decoration: none; } .ds-status-board a span { color: var(--board-muted, #d8e2ef); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; } .ds-status-board a:hover, .ds-status-board a:focus-visible { background: var(--ink-hover, #1d385d); } .ds-status-board a:focus-visible { outline: 3px solid var(--signal-deep, #8a6500); outline-offset: 4px; }"
+    },
+    {
+      "name": "Route Row",
+      "kind": "custom",
+      "refersTo": "route-row",
+      "description": "The signature ruled destination row for work and writing entries.",
+      "html": "<a class=\"ds-route-row\" href=\"#\"><span class=\"ds-route-row__code\">WRK</span><span class=\"ds-route-row__main\"><strong>Destination title</strong><span>A concise destination summary.</span></span><span class=\"ds-route-row__destination\">View →</span></a>",
+      "css": ".ds-route-row { display: grid; grid-template-columns: minmax(5.5rem, 0.22fr) minmax(0, 1fr) auto; gap: clamp(1rem, 3vw, 3rem); align-items: center; min-height: 7rem; padding: 1.25rem 0; border-top: 2px solid var(--ink, #10233f); border-bottom: 1px solid var(--line, #a9b2ac); color: var(--ink-deep, #09172b); text-decoration: none; transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), transform 240ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-route-row:hover { background: var(--white, #fffef8); transform: translateX(0.35rem); } .ds-route-row:focus-visible { outline: 3px solid var(--signal-deep, #8a6500); outline-offset: 4px; } .ds-route-row__code, .ds-route-row__destination { font-family: var(--display, 'Route Sans', 'Arial Narrow', sans-serif); font-size: 0.84rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; } .ds-route-row__main { display: grid; gap: 0.15rem; } .ds-route-row__main strong { font-family: var(--display, 'Route Sans', 'Arial Narrow', sans-serif); font-size: clamp(1.35rem, 3vw, 2rem); letter-spacing: -0.015em; line-height: 1.1; text-transform: uppercase; } .ds-route-row__main > span { max-width: 62ch; color: var(--muted, #526173); font-size: 0.92rem; } .ds-route-row__destination { white-space: nowrap; }"
+    },
+    {
+      "name": "Prose Callout",
+      "kind": "card",
+      "description": "A flat warm-white blockquote that emphasizes long-form content without elevation.",
+      "html": "<blockquote class=\"ds-prose-callout\">A concise emphasized passage.</blockquote>",
+      "css": ".ds-prose-callout { margin: 0; padding: 1.25rem 1.5rem; background: var(--white, #fffef8); color: var(--ink-deep, #09172b); font-family: var(--body, Aptos, 'Segoe UI', sans-serif); font-size: 1.2rem; font-weight: 650; line-height: 1.65; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Wayfinding Board",
+    "overview": "Wayfinding Board treats the personal site as a clear public directory rather than an avatar-led portfolio. Its visual language comes from transit and destination boards: compact mastheads, condensed uppercase type, dark information fields, signal markers, and horizontal rules that make choices easy to scan.\n\nThe system is direct, high-contrast, and deliberately flat. Writing and work remain equally legible destinations, while the primary dark action points visitors toward work. The established anti-reference is the avatar-led hero paired with an equal-card grid.",
+    "keyCharacteristics": [
+      "Ink-blue structure on a warm paper field.",
+      "Signal yellow reserved for orientation, state, and emphasis.",
+      "Condensed uppercase display type paired with a neutral system body face.",
+      "Ruled destination rows instead of interchangeable cards.",
+      "Square-edged, low-decoration components with visible keyboard focus."
+    ],
+    "rules": [
+      { "name": "The Signal Is Scarce Rule", "body": "Use yellow for orientation and state, not as a general-purpose surface.", "section": "colors" },
+      { "name": "The Route-Type Rule", "body": "Reserve condensed uppercase type for identity, headings, codes, and destinations; keep explanatory copy in the body face.", "section": "typography" },
+      { "name": "The Destination-First Rule", "body": "Preserve a single reading axis and let rules, alignment, and column changes express hierarchy.", "section": "layout" },
+      { "name": "The Flat Board Rule", "body": "Keep surfaces flat at rest; communicate grouping and state through color, rules, and motion.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do reserve Signal Yellow for navigation, focus, and state cues.",
+      "Do use ruled destination rows for comparable writing and work entries.",
+      "Do keep descriptive text within the established 55–72 character measures.",
+      "Do preserve the visible 3px keyboard-focus outline and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't introduce shadows, gradients, glass effects, or soft card elevation.",
+      "Don't turn writing and work into an equal-card grid.",
+      "Don't replace the wayfinding introduction with an avatar-led hero.",
+      "Don't apply condensed uppercase display type to long-form body copy."
+    ]
+  }
+}

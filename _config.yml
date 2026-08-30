@@ -1,0 +1,80 @@
+title: mutnianski.dev
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+tagline: Writing and selected work
+url: "https://mutnianski.dev"
+baseurl: ""
+lang: en
+timezone: Europe/Warsaw
+
+theme: jekyll-theme-hydejack
+logo: /assets/favicon.svg
+favicon: /assets/favicon.svg
+accent_image: none
+accent_color: rgb(255, 212, 59)
+theme_color: rgb(16, 35, 63)
+google_fonts: false
+
+author:
+  name: mutnianski.dev
+
+copyright: mutnianski.dev
+
+menu:
+  - title: Home
+    url: /
+  - title: Writing
+    url: /writing/
+  - title: Work
+    url: /work/
+  - title: About
+    url: /about/
+
+permalink: /writing/:title/
+
+collections:
+  projects:
+    output: true
+    permalink: /work/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+      seo:
+        type: WebPage
+  - scope:
+      path: assets/
+    values:
+      sitemap: false
+
+hydejack:
+  post_addons: [related]
+  no_search: true
+  no_break_layout: true
+  cookies_banner: false
+  advertise: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - .artifacts
+  - vendor

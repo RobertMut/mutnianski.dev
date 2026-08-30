@@ -1,0 +1,21 @@
+---
+layout: page
+title: Work
+description: Selected projects and external portfolio links.
+permalink: /work/
+---
+<ul class="related-posts">
+  {% assign projects = site.projects | sort: 'order' %}
+  {% for project in projects %}
+    <li class="h4">
+      {% if project.external_url %}
+        <a href="{{ project.external_url }}" class="flip-title"><span>{{ project.title }}</span></a>
+      {% else %}
+        <a href="{{ project.url | relative_url }}" class="flip-title"><span>{{ project.title }}</span></a>
+      {% endif %}
+      {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+    </li>
+  {% else %}
+    <li>Portfolio entries will arrive here.</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,40 @@
+---
+layout: page
+title: Home
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+---
+<p class="lead">Consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+<h2>Latest writing</h2>
+
+<ul class="related-posts">
+  {% for post in site.posts limit: 3 %}
+    <li class="h4">
+      <a href="{{ post.url | relative_url }}" class="flip-title"><span>{{ post.title }}</span></a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+    </li>
+  {% else %}
+    <li>New writing will arrive here.</li>
+  {% endfor %}
+</ul>
+
+<p><a href="{{ '/writing/' | relative_url }}">View all writing</a></p>
+
+<h2>Selected work</h2>
+
+<ul class="related-posts">
+  {% assign selected_projects = site.projects | sort: "order" %}
+  {% for project in selected_projects limit: 3 %}
+    <li class="h4">
+      {% if project.external_url %}
+        <a href="{{ project.external_url }}" class="flip-title"><span>{{ project.title }}</span></a>
+      {% else %}
+        <a href="{{ project.url | relative_url }}" class="flip-title"><span>{{ project.title }}</span></a>
+      {% endif %}
+    </li>
+  {% else %}
+    <li>Portfolio entries will arrive here.</li>
+  {% endfor %}
+</ul>
+
+<p><a href="{{ '/work/' | relative_url }}">View all work</a></p>
