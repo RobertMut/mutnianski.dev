@@ -1,17 +1,23 @@
 ---
 layout: page
-title: Work
+title: Projects
 description: Selected projects and external portfolio links.
 permalink: /work/
 ---
 <ul class="related-posts">
   {% assign projects = site.projects | sort: 'order' %}
   {% for project in projects %}
+    {% assign commercial_icon = nil %}
+    {% if project.commercial == true %}
+      {% assign commercial_icon = '/assets/icons/dollar-coin-remix.svg' %}
+    {% elsif project.commercial == false %}
+      {% assign commercial_icon = '/assets/icons/non-commercial-dollars-remix.svg' %}
+    {% endif %}
     <li class="h4">
       {% if project.external_url %}
-        <a href="{{ project.external_url }}" class="flip-title"><span>{{ project.title }}</span></a>
+        <a href="{{ project.external_url }}" class="flip-title">{% if commercial_icon %}<img class="project-commercial-icon" src="{{ commercial_icon | relative_url }}" alt="" aria-hidden="true">{% endif %}<span>{{ project.title }}</span></a>
       {% else %}
-        <a href="{{ project.url | relative_url }}" class="flip-title"><span>{{ project.title }}</span></a>
+        <a href="{{ project.url | relative_url }}" class="flip-title">{% if commercial_icon %}<img class="project-commercial-icon" src="{{ commercial_icon | relative_url }}" alt="" aria-hidden="true">{% endif %}<span>{{ project.title }}</span></a>
       {% endif %}
       {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
     </li>
