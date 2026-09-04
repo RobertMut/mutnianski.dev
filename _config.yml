@@ -1,13 +1,13 @@
-title: mutnianski.dev
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-tagline: Writing and selected work
-url: "https://mutnianski.dev"
+title: Robert Mutniański
+description: Blog and portfolio
+tagline: Software Engineer
+url: ""
 baseurl: ""
 lang: en
 timezone: Europe/Warsaw
 
 theme: jekyll-theme-hydejack
-logo: /assets/favicon.svg
+logo: /assets/img/face.jpg
 favicon: /assets/favicon.svg
 accent_image: none
 accent_color: rgb(255, 212, 59)
@@ -15,7 +15,10 @@ theme_color: rgb(16, 35, 63)
 google_fonts: false
 
 author:
-  name: mutnianski.dev
+  name: "Robert Mutniański"
+  social:
+    github: RobertMut
+    linkedin: "robert-mutniański"
 
 copyright: mutnianski.dev
 

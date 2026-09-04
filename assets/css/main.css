@@ -381,6 +381,14 @@ main {
   margin-bottom: clamp(6rem, 12vw, 10rem);
 }
 
+.project-commercial-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.35em;
+  vertical-align: -0.125em;
+}
+
 .not-found {
   padding-block: clamp(6rem, 14vw, 12rem);
 }

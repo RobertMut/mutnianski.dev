@@ -21,6 +21,12 @@ If Ruby is not installed but Docker is available, run:
 docker run --rm -p 4000:4000 -e BUNDLE_PATH=vendor/bundle -v "${PWD}:/srv/jekyll" -w /srv/jekyll ruby:3.2.2 bash -lc "bundle install && bundle exec jekyll serve --host 0.0.0.0"
 ```
 
+With Podman, run:
+
+```powershell
+podman run --rm -p 4000:4000 -e BUNDLE_PATH=vendor/bundle -v "${PWD}:/srv/jekyll" -w /srv/jekyll ruby:3.2.2 bash -lc "bundle install && bundle exec jekyll serve --host 0.0.0.0"
+```
+
 ## Content
 
 - Add blog posts to `_posts/` using `YYYY-MM-DD-title.md` filenames.
