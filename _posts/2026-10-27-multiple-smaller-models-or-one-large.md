@@ -18,18 +18,22 @@ With this in mind, it's worth checking whether anyone has achieved this, and if 
 # Multiple Davids vs Goliath
 One specialized SLM for a task can beat a multi-purpose frontier LLM. But what about several smaller models versus one larger model? [Żywot et al. (2026)][3] checked Qwen3 models (8B, 32B parameters), by allowing an orchestrator to give tasks to specialized sub-agents that could write to a structured shared memory. The orchestrator, however, can read and write to the memory. This configuration was compared with a single LLM without sub-agents or shared memory. The framework used for this conference paper consists of an orchestrator (delegating work), a web-search agent, a coder and a file inspector. All agents share the same structured memory. The evaluation used four thinking configurations: None, Sub-agent only (thinking only for sub-agents), Orchestrator (thinking only for orchestrator), All (thinking enabled for both).
 
-|                         ![Żywot et al. Table 1. Section 5.1]({{ site.url }}{{ site.baseurl }}/assets/img/20261027smallermodels/zywot_table.png)                         |
-| :----------------------------------------------------------------------------------: |
-| *[Table 1. Sec. 5.1: SMALL MULTI-AGENT SYSTEMS VS. LARGE SINGLE-AGENT MODELS][3]* |
+![Żywot et al. Table 1. Section 5.1]({{ site.url }}{{ site.baseurl }}/assets/img/20261027smallermodels/zywot_table.png)
+
+[Table 1. Sec. 5.1: SMALL MULTI-AGENT SYSTEMS VS. LARGE SINGLE-AGENT MODELS][3]
+{:.figcaption}
+
 The multi-agent system with thinking enabled for both (`All`) beat the larger 32B model on two benchmarks: GAIA (end-to-end tool use) and AIME (mathematical problem-solving), and achieved comparable or the same results for MuSiQue (multi-hop retrieval) and GPQA (graduate-level science Q&A). The biggest win for the large model comes from HLE (domain expert question benchmarks). Adding sub-agent thinking on top (`All` thinking) brings marginal accuracy gains, whereas enabling thinking only for sub-agents provides nearly no benefit. Furthermore, sub-agent size becomes negligible, when the orchestrator is allowed to think: 1.7B, 8B, and 32B workers scored 23%, 23% and 23.6%, so the orchestrator provides only moderate gains where more benefit comes from enabling thinking. This suggests that the bottleneck is the planner, not the executor.
 
 # Single agent better than multi-agent system?
 Even if multi-agent system (MAS) collaborating with external tools rivalled a larger model, there is still a place where SAS can come into play, by comparing architectures.
 [Tran and Kiela (2026)][4] evaluated different MAS architectures, SAS and SAS with longer thinking (SAS-L) on FRAMES (Factuality, Retrieval, And reasoning MEasurement Set) and MuSiQue (4-hop). The different MAS include sequential multi-agent (Seq), subtask parallel (Sub), parallel roles (Roles), debate (Deb) and ensemble (Ens).
 
-|                  ![Tran and Kiela Table 1. Section 5.1]({{ site.url }}{{ site.baseurl }}/assets/img/20261027smallermodels/trankiela_table.png)                   |
-| :---------------------------------------------------------------------: |
-| *[Table 1. Sec. 5.1: Single-agent (SAS) vs. multi-agent architectures][4]* |
+![Tran and Kiela Table 1. Section 5.1]({{ site.url }}{{ site.baseurl }}/assets/img/20261027smallermodels/trankiela_table.png)
+
+[Table 1. Sec. 5.1: Single-agent (SAS) vs. multi-agent architectures][4]
+{:.figcaption}
+
 Here are observations where SAS/SAS-L have higher or equal scores:
 - Qwen3-30B-A3B: SAS between 500-1K tokens range in FRAMES benchmark and 500-10k in MuSiQue.
 - DeepSeek-R1-Distill-70B: SAS-L in 500, SAS-L/SAS (same result) for 1K, 2k-5k range for SAS in FRAMES, and SAS 500-10k in MuSiQue (big difference favouring SAS).
