@@ -1,0 +1,13 @@
+{% unless page.image %}
+  <meta property="og:image" content="{{ site.logo | absolute_url }}">
+  <meta name="twitter:image" content="{{ site.logo | absolute_url }}">
+  <meta property="og:image:alt" content="{{ site.author.name }}">
+{% endunless %}
+{% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag | escape }}">
+{% endfor %}
+{% if page.tags.size > 0 %}
+  {% unless page.keywords.size > 0 or site.keywords.size > 0 %}
+  <meta name="keywords" content="{{ page.tags | join:',' | escape }}">
+  {% endunless %}
+{% endif %}

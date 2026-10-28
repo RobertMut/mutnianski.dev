@@ -2,6 +2,7 @@
 title: Could UML help in AI-assisted coding?
 description: Going through selected studies to explore possible way of writing code with UML and AI
 reading_time: 7 min read
+tags: [uml, llm, software-modeling, ai-assisted-coding]
 ---
 
 *This article was written in October 2026, and can become outdated*

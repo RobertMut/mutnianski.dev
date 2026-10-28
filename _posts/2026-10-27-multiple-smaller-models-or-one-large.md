@@ -2,6 +2,7 @@
 title: Multiple smaller models or large one?
 description: Selected arxiv preprints comparing specialized LLMs and single agent systems vs. multi agent systems
 reading_time: 4 min read
+tags: [llm, multi-agent, small-language-models, ai-agents]
 ---
 
 *This article was written in October 2026, and can become outdated*

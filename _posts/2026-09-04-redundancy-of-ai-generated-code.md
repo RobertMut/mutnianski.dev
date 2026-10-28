@@ -2,6 +2,7 @@
 title: Redundancy and maintainability of the AI-generated code
 description: Maintainability and redundancy of unmanaged AI generation can suffer over time.
 reading_time: 4 min read
+tags: [ai-assisted-coding, code-quality, refactoring]
 ---
 
 *This article was written in September 2026, and can become outdated*

@@ -1,7 +1,7 @@
 title: Robert Mutniański
 description: Blog and portfolio
 tagline: Software Engineer
-url: ""
+url: "https://mutnianski.dev"
 baseurl: ""
 lang: en
 timezone: Europe/Warsaw
@@ -19,6 +19,12 @@ author:
   social:
     github: RobertMut
     linkedin: "robert-mutniański"
+
+social:
+  name: "Robert Mutniański"
+  links:
+    - https://github.com/RobertMut
+    - https://www.linkedin.com/in/robert-mutniański
 
 copyright: mutnianski.dev
 
@@ -81,3 +87,4 @@ exclude:
   - DESIGN.md
   - .artifacts
   - vendor
+  - CLAUDE.md

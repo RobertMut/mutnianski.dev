@@ -5,6 +5,7 @@ code: WEB
 order: 1
 external_url: https://syvat.io
 commercial: true
+tags: [electron, react, dotnet]
 ---
 
 ## Overview

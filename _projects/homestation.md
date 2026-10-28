@@ -4,6 +4,7 @@ summary: Maecenas faucibus mollis interdum, donec sed odio dui.
 code: Hmst
 order: 2
 commercial: false
+tags: [esp32, iot, mqtt, dotnet, angular, docker]
 ---
 
 Design and construction of a solution for the measurement and storage of environmental parameters in the home environment using ESP32, C++, ESP-IDF, MQTT, ASP.NET and containerisation.
