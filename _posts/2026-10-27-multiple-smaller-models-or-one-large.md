@@ -8,7 +8,7 @@ reading_time: 4 min read
 
 # Multiple smaller models or large one?
 
-Top AI companies participate in a race to create the most intelligent and best-performing model. This competition forces businesses to showcase the capabilities of their frontier models, [costing thousands of dollars (Anthropic, 2026)[1]]. Not everyone can afford such a showcase because of high prices or strict budgets.
+Top AI companies participate in a race to create the most intelligent and best-performing model. This competition forces businesses to showcase the capabilities of their frontier models, [costing thousands of dollars (Anthropic, 2026)][1]. Not everyone can afford such a showcase because of high prices or strict budgets.
 When champions with massive budgets clash with each other, is there a place for something smaller? Even top players release cheaper (and smaller) versions of their models. There are also hundreds of other LLMs, and many of them can even run on a personal computer. A smaller model costs only a fraction of a frontier one.
 With this in mind, it's worth checking whether anyone has achieved this, and if it is really useful. Otherwise, we risk wasting time and money and missing deadlines.
 
@@ -20,7 +20,7 @@ One specialized SLM for a task can beat a multi-purpose frontier LLM. But what a
 
 |                         ![Żywot et al. Table 1. Section 5.1]({{ site.url }}{{ site.baseurl }}/assets/img/20261027smallermodels/zywot_table.png)                         |
 | :----------------------------------------------------------------------------------: |
-| *[Table 1. Sec. 5.1: SMALL MULTI-AGENT SYSTEMS VS. LARGE SINGLE-AGENT MODELS][2]* |
+| *[Table 1. Sec. 5.1: SMALL MULTI-AGENT SYSTEMS VS. LARGE SINGLE-AGENT MODELS][3]* |
 The multi-agent system with thinking enabled for both (`All`) beat the larger 32B model on two benchmarks: GAIA (end-to-end tool use) and AIME (mathematical problem-solving), and achieved comparable or the same results for MuSiQue (multi-hop retrieval) and GPQA (graduate-level science Q&A). The biggest win for the large model comes from HLE (domain expert question benchmarks). Adding sub-agent thinking on top (`All` thinking) brings marginal accuracy gains, whereas enabling thinking only for sub-agents provides nearly no benefit. Furthermore, sub-agent size becomes negligible, when the orchestrator is allowed to think: 1.7B, 8B, and 32B workers scored 23%, 23% and 23.6%, so the orchestrator provides only moderate gains where more benefit comes from enabling thinking. This suggests that the bottleneck is the planner, not the executor.
 
 # Single agent better than multi-agent system?
@@ -29,7 +29,7 @@ Even if multi-agent system (MAS) collaborating with external tools rivalled a la
 
 |                  ![Tran and Kiela Table 1. Section 5.1]({{ site.url }}{{ site.baseurl }}/assets/img/20261027smallermodels/trankiela_table.png)                   |
 | :---------------------------------------------------------------------: |
-| *[Table 1. Sec. 5.1: Single-agent (SAS) vs. multi-agent architectures][3]* |
+| *[Table 1. Sec. 5.1: Single-agent (SAS) vs. multi-agent architectures][4]* |
 Here are observations where SAS/SAS-L have higher or equal scores:
 - Qwen3-30B-A3B: SAS between 500-1K tokens range in FRAMES benchmark and 500-10k in MuSiQue.
 - DeepSeek-R1-Distill-70B: SAS-L in 500, SAS-L/SAS (same result) for 1K, 2k-5k range for SAS in FRAMES, and SAS 500-10k in MuSiQue (big difference favouring SAS).
@@ -47,7 +47,7 @@ There is no simple answer that settles this debate due to too many specialized t
 - Żywot, Agata, Xinyi Chen, Yifei Yuan, Anders Søgaard, and Maarten de Rijke. ‘Can Small Agents Collaborate to Beat a Single Large Language Model?’ arXiv:2601.11327. Preprint, arXiv, 13 April 2026. [https://doi.org/10.48550/arXiv.2601.11327](https://doi.org/10.48550/arXiv.2601.11327).
 - Tran, Dat, and Douwe Kiela. ‘Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets’. arXiv:2604.02460. Preprint, arXiv, 11 April 2026. [https://doi.org/10.48550/arXiv.2604.02460](https://doi.org/10.48550/arXiv.2604.02460).
 
-[1]: ‘Building a C Compiler with Parallel Claudes’. 5 February 2026.[https://www.anthropic.com/research/building-c-compiler](https://www.anthropic.com/research/building-c-compiler).
-[2]: Christou, Despina, and Grigorios Tsoumakas. ‘Sub-Billion, Super-Frontier: Small Language Models Rival Zero-Shot Frontier LLMs on General and Literary Relation Extraction’. arXiv:2606.22606. Preprint, arXiv, 21 June 2026. [https://doi.org/10.48550/arXiv.2606.22606](https://doi.org/10.48550/arXiv.2606.22606).
-[3]: Żywot, Agata, Xinyi Chen, Yifei Yuan, Anders Søgaard, and Maarten de Rijke. ‘Can Small Agents Collaborate to Beat a Single Large Language Model?’ arXiv:2601.11327. Preprint, arXiv, 13 April 2026. [https://doi.org/10.48550/arXiv.2601.11327](https://doi.org/10.48550/arXiv.2601.11327).
-[4]: Tran, Dat, and Douwe Kiela. ‘Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets’. arXiv:2604.02460. Preprint, arXiv, 11 April 2026. [https://doi.org/10.48550/arXiv.2604.02460](https://doi.org/10.48550/arXiv.2604.02460).
+[1]: https://www.anthropic.com/research/building-c-compiler "Building a C Compiler with Parallel Claudes"
+[2]: https://doi.org/10.48550/arXiv.2606.22606 "Sub-Billion, Super-Frontier: Small Language Models Rival Zero-Shot Frontier LLMs on General and Literary Relation Extraction"
+[3]: https://doi.org/10.48550/arXiv.2601.11327 "Can Small Agents Collaborate to Beat a Single Large Language Model?"
+[4]: https://doi.org/10.48550/arXiv.2604.02460 "Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets"
